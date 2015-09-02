@@ -1,0 +1,6 @@
+12:19:26 **** Incremental Build of configuration Default for project HelloWorld ****
+make all 
+make: *** No rule to make target `all'.  Stop.
+
+12:19:26 Build Finished (took 58ms)
+
