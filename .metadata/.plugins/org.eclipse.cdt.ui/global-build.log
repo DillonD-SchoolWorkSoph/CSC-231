@@ -1,5 +1,31 @@
-23:32:23 **** Incremental Build of configuration Debug for project RepeatingWord ****
+16:51:06 **** Incremental Build of configuration Debug for project ReapeatingWord2 ****
 Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o source.o ../source.cpp 
-g++ -o RepeatingWord source.o 
-Info: Nothing to build for RepeatingWord
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Source.o ../Source.cpp 
+../Source.cpp: In function ‘int main()’:
+../Source.cpp:11:2: warning: ‘auto’ changes meaning in C++11; please remove it [-Wc++0x-compat]
+  auto numberOfWords{0};
+  ^
+../Source.cpp:11:7: error: ‘numberOfWords’ does not name a type
+  auto numberOfWords{0};
+       ^
+../Source.cpp:12:2: warning: ‘auto’ changes meaning in C++11; please remove it [-Wc++0x-compat]
+  auto previous{""};
+  ^
+../Source.cpp:12:7: error: ‘previous’ does not name a type
+  auto previous{""};
+       ^
+../Source.cpp:13:2: warning: ‘auto’ changes meaning in C++11; please remove it [-Wc++0x-compat]
+  auto current{""};
+  ^
+../Source.cpp:13:7: error: ‘current’ does not name a type
+  auto current{""};
+       ^
+../Source.cpp:14:15: error: ‘current’ was not declared in this scope
+  while(cin >> current){
+               ^
+../Source.cpp:15:5: error: ‘numberOfWords’ was not declared in this scope
+   ++numberOfWords;
+     ^
+../Source.cpp:16:6: error: ‘previous’ was not declared in this scope
+   if(previous == current){
+      ^
