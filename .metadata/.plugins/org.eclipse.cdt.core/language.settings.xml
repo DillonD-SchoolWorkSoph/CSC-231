@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <plugin>
 	<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
-		<provider class="org.eclipse.cdt.managedbuilder.language.settings.providers.GCCBuiltinSpecsDetector" console="false" env-hash="1106481859833180195" id="org.eclipse.cdt.managedbuilder.core.GCCBuiltinSpecsDetector" keep-relative-paths="false" name="CDT GCC Built-in Compiler Settings" parameter="${COMMAND} ${FLAGS} -E -P -v -dD &quot;${INPUTS}&quot;">
+		<provider class="org.eclipse.cdt.managedbuilder.language.settings.providers.GCCBuiltinSpecsDetector" console="false" env-hash="-939867495258418291" id="org.eclipse.cdt.managedbuilder.core.GCCBuiltinSpecsDetector" keep-relative-paths="false" name="CDT GCC Built-in Compiler Settings" parameter="${COMMAND} ${FLAGS} -E -P -v -dD &quot;${INPUTS}&quot;">
 			<language-scope id="org.eclipse.cdt.core.gcc"/>
 			<language-scope id="org.eclipse.cdt.core.g++"/>
 			<language id="org.eclipse.cdt.core.gcc">
-				<entry kind="includePath" name="/usr/lib/gcc/x86_64-linux-gnu/4.8/include">
+				<entry kind="includePath" name="/usr/lib/gcc/x86_64-redhat-linux/4.8.3/include">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
 				<entry kind="includePath" name="/usr/local/include">
-					<flag value="BUILTIN|READONLY"/>
-				</entry>
-				<entry kind="includePath" name="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed">
-					<flag value="BUILTIN|READONLY"/>
-				</entry>
-				<entry kind="includePath" name="/usr/include/x86_64-linux-gnu">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
 				<entry kind="includePath" name="/usr/include">
@@ -293,7 +287,10 @@
 				<entry kind="macro" name="__GNUC_MINOR__" value="8">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
-				<entry kind="macro" name="__GNUC_PATCHLEVEL__" value="2">
+				<entry kind="macro" name="__GNUC_PATCHLEVEL__" value="3">
+					<flag value="BUILTIN|READONLY"/>
+				</entry>
+				<entry kind="macro" name="__GNUC_RH_RELEASE__" value="7">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
 				<entry kind="macro" name="__GNUC__" value="4">
@@ -551,9 +548,6 @@
 				<entry kind="macro" name="__SSE__" value="1">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
-				<entry kind="macro" name="__SSP__" value="1">
-					<flag value="BUILTIN|READONLY"/>
-				</entry>
 				<entry kind="macro" name="__STDC_HOSTED__" value="1">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
@@ -674,7 +668,7 @@
 				<entry kind="macro" name="__USER_LABEL_PREFIX__" value="">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
-				<entry kind="macro" name="__VERSION__" value="&quot;4.8.2&quot;">
+				<entry kind="macro" name="__VERSION__" value="&quot;4.8.3 20140911 (Red Hat 4.8.3-7)&quot;">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
 				<entry kind="macro" name="__WCHAR_MAX__" value="2147483647">
@@ -739,25 +733,19 @@
 				</entry>
 			</language>
 			<language id="org.eclipse.cdt.core.g++">
-				<entry kind="includePath" name="/usr/include/c++/4.8">
+				<entry kind="includePath" name="/usr/include/c++/4.8.3">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
-				<entry kind="includePath" name="/usr/include/x86_64-linux-gnu/c++/4.8">
+				<entry kind="includePath" name="/usr/include/c++/4.8.3/x86_64-redhat-linux">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
-				<entry kind="includePath" name="/usr/include/c++/4.8/backward">
+				<entry kind="includePath" name="/usr/include/c++/4.8.3/backward">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
-				<entry kind="includePath" name="/usr/lib/gcc/x86_64-linux-gnu/4.8/include">
+				<entry kind="includePath" name="/usr/lib/gcc/x86_64-redhat-linux/4.8.3/include">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
 				<entry kind="includePath" name="/usr/local/include">
-					<flag value="BUILTIN|READONLY"/>
-				</entry>
-				<entry kind="includePath" name="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed">
-					<flag value="BUILTIN|READONLY"/>
-				</entry>
-				<entry kind="includePath" name="/usr/include/x86_64-linux-gnu">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
 				<entry kind="includePath" name="/usr/include">
@@ -1045,7 +1033,10 @@
 				<entry kind="macro" name="__GNUC_MINOR__" value="8">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
-				<entry kind="macro" name="__GNUC_PATCHLEVEL__" value="2">
+				<entry kind="macro" name="__GNUC_PATCHLEVEL__" value="3">
+					<flag value="BUILTIN|READONLY"/>
+				</entry>
+				<entry kind="macro" name="__GNUC_RH_RELEASE__" value="7">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
 				<entry kind="macro" name="__GNUC__" value="4">
@@ -1312,9 +1303,6 @@
 				<entry kind="macro" name="__SSE__" value="1">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
-				<entry kind="macro" name="__SSP__" value="1">
-					<flag value="BUILTIN|READONLY"/>
-				</entry>
 				<entry kind="macro" name="__STDC_HOSTED__" value="1">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
@@ -1435,7 +1423,7 @@
 				<entry kind="macro" name="__USER_LABEL_PREFIX__" value="">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
-				<entry kind="macro" name="__VERSION__" value="&quot;4.8.2&quot;">
+				<entry kind="macro" name="__VERSION__" value="&quot;4.8.3 20140911 (Red Hat 4.8.3-7)&quot;">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
 				<entry kind="macro" name="__WCHAR_MAX__" value="2147483647">
