@@ -1,0 +1,11 @@
+23:26:28 **** Rebuild of configuration Debug for project TryThis_3.5 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o source2.o ../source2.cpp 
+../source2.cpp: In function ‘int main()’:
+../source2.cpp:16:8: warning: unused variable ‘output’ [-Wunused-variable]
+  float output = std::sqrt(floatOfSomeNumber);
+        ^
+g++ -o TryThis_3.5 source2.o 
+
+23:26:28 Build Finished (took 342ms)
+

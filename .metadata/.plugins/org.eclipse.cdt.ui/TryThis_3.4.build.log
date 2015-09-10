@@ -1,0 +1,10 @@
+23:26:43 **** Incremental Build of configuration Debug for project TryThis_3.4 ****
+Info: Internal Builder is used for build
+g++ -o TryThis_3.4 source.o source2.o 
+source2.o: In function `std::sqrt(float)':
+/home/dillon/CSC-231/TryThis_3.4/Debug/../source2.cpp:12: multiple definition of `main'
+source.o:/home/dillon/CSC-231/TryThis_3.4/Debug/../source.cpp:11: first defined here
+collect2: error: ld returned 1 exit status
+
+23:26:43 Build Finished (took 193ms)
+

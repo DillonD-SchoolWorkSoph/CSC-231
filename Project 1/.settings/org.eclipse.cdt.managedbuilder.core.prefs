@@ -1,4 +1,12 @@
 eclipse.preferences.version=1
+environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.exe.debug.686585684.277373199/CPATH/delimiter=\:
+environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.exe.debug.686585684.277373199/CPATH/operation=remove
+environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.exe.debug.686585684.277373199/CPLUS_INCLUDE_PATH/delimiter=\:
+environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.exe.debug.686585684.277373199/CPLUS_INCLUDE_PATH/operation=remove
+environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.exe.debug.686585684.277373199/C_INCLUDE_PATH/delimiter=\:
+environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.exe.debug.686585684.277373199/C_INCLUDE_PATH/operation=remove
+environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.exe.debug.686585684.277373199/append=true
+environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.exe.debug.686585684.277373199/appendContributed=true
 environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.exe.debug.686585684.415424558/CPATH/delimiter=\:
 environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.exe.debug.686585684.415424558/CPATH/operation=remove
 environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.exe.debug.686585684.415424558/CPLUS_INCLUDE_PATH/delimiter=\:
@@ -23,6 +31,10 @@ environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.exe.debug.686585
 environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.exe.debug.686585684/C_INCLUDE_PATH/operation=remove
 environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.exe.debug.686585684/append=true
 environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.exe.debug.686585684/appendContributed=true
+environment/buildEnvironmentLibrary/cdt.managedbuild.config.gnu.exe.debug.686585684.277373199/LIBRARY_PATH/delimiter=\:
+environment/buildEnvironmentLibrary/cdt.managedbuild.config.gnu.exe.debug.686585684.277373199/LIBRARY_PATH/operation=remove
+environment/buildEnvironmentLibrary/cdt.managedbuild.config.gnu.exe.debug.686585684.277373199/append=true
+environment/buildEnvironmentLibrary/cdt.managedbuild.config.gnu.exe.debug.686585684.277373199/appendContributed=true
 environment/buildEnvironmentLibrary/cdt.managedbuild.config.gnu.exe.debug.686585684.415424558/LIBRARY_PATH/delimiter=\:
 environment/buildEnvironmentLibrary/cdt.managedbuild.config.gnu.exe.debug.686585684.415424558/LIBRARY_PATH/operation=remove
 environment/buildEnvironmentLibrary/cdt.managedbuild.config.gnu.exe.debug.686585684.415424558/append=true

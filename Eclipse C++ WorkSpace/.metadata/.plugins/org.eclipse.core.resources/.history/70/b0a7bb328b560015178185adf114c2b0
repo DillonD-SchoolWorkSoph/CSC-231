@@ -1,0 +1,21 @@
+/*
+ * source.cpp
+ *
+ *  Created on: Sep 8, 2015
+ *      Author: dillon
+ */
+#include <iostream>
+
+using namespace std;
+
+int main(){
+	int i = 1;
+	while(i == 1){
+		cout << "enter a number to be converted  xx.xx or 1 to quit";
+
+	}
+
+}
+
+
+

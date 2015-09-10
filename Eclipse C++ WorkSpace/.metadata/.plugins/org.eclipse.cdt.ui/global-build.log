@@ -1,8 +1,19 @@
-Info: Nothing to build for Project 1
-22:50:50 **** Incremental Build of configuration Exercise 7 for project Project 1 ****
-Info: Internal Builder is used for build
-g++ -o "Project 1" source3.o source2.o 
-source2.o: In function `main':
-/home/dillon/CSC-231/Project 1/Exercise 7/../source2.cpp:15: multiple definition of `main'
-source3.o:/home/dillon/CSC-231/Project 1/Exercise 7/../source3.cpp:12: first defined here
-collect2: error: ld returned 1 exit status
+18:38:04 **** Incremental Build of configuration Debug for project TryThs_4.6.4 ****
+make all 
+Building file: ../source.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"source.d" -MT"source.d" -o "source.o" "../source.cpp"
+../source.cpp: In function ‘int main()’:
+../source.cpp:26:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0 ; i < words.size(); i ++){
+                                 ^
+Finished building: ../source.cpp
+ 
+Building target: TryThs_4.6.4
+Invoking: GCC C++ Linker
+g++  -o "TryThs_4.6.4"  ./source.o   
+Finished building target: TryThs_4.6.4
+ 
+18:38:12 **** Incremental Build of configuration Debug for project TryThs_4.6.4 ****
+make all 
+make: Nothing to be done for `all'.
