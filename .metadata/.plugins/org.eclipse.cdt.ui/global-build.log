@@ -1,18 +1,18 @@
-12:44:36 **** Incremental Build of configuration Debug for project Project 1 ****
+12:20:44 **** Incremental Build of configuration Exercise 10 for project Project 1 ****
 make all 
-Building file: ../source.cpp
+Building file: ../source3.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"source.d" -MT"source.d" -o "source.o" "../source.cpp"
-Finished building: ../source.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"source3.d" -MT"source3.d" -o "source3.o" "../source3.cpp"
+Finished building: ../source3.cpp
  
 Building target: Project 1
 Invoking: GCC C++ Linker
-g++  -o "Project 1"  ./source.o   
+g++  -o "Project 1"  ./source3.o   
 Finished building target: Project 1
  
-12:44:39 **** Incremental Build of configuration Debug for project Project 1 ****
+12:20:52 **** Incremental Build of configuration Exercise 6 for project Project 1 ****
 make all 
 make: Nothing to be done for `all'.
-12:44:46 **** Incremental Build of configuration Debug for project Project 1 ****
+12:21:00 **** Incremental Build of configuration Exercise 6 for project Project 1 ****
 make all 
 make: Nothing to be done for `all'.
