@@ -1,0 +1,22 @@
+/*
+ * Source.cpp
+ *
+ *  Created on: Sep 6, 2015
+ *      Author: dillon
+ */
+#include <iostream>
+using namespace std;
+
+int main(){
+	auto numberOfWords{0};
+	auto previous{""};
+	auto current{""};
+	while(cin >> current){
+		++numberOfWords;
+		if(previous == current){
+			cout << "word number" << numberOfWords << " repeated: " << current << '\n';
+		}
+	}
+}
+
+

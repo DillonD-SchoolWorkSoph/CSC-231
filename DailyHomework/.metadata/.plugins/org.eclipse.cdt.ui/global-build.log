@@ -1,0 +1,19 @@
+18:38:04 **** Incremental Build of configuration Debug for project TryThs_4.6.4 ****
+make all 
+Building file: ../source.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"source.d" -MT"source.d" -o "source.o" "../source.cpp"
+../source.cpp: In function ‘int main()’:
+../source.cpp:26:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0 ; i < words.size(); i ++){
+                                 ^
+Finished building: ../source.cpp
+ 
+Building target: TryThs_4.6.4
+Invoking: GCC C++ Linker
+g++  -o "TryThs_4.6.4"  ./source.o   
+Finished building target: TryThs_4.6.4
+ 
+18:38:12 **** Incremental Build of configuration Debug for project TryThs_4.6.4 ****
+make all 
+make: Nothing to be done for `all'.

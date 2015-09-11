@@ -1,0 +1,22 @@
+/*
+ * stuff.cpp
+ *
+ *  Created on: Sep 2, 2015
+ *      Author: dwd002
+ */
+#include <iostream>
+#include <string>
+#include <vector>
+#include <map>
+#include <memory>
+#include <algorithm>
+
+using std::cout;
+
+int main(){
+	std::string a << "poop:";
+	cout << a;
+	return 0;
+}
+
+
