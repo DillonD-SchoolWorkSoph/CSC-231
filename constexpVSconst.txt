@@ -1,2 +1,0 @@
-The difference between const and constexp is that const constexp must be assigned a litteral
-value at compile time, while const can be assigned a value at any time.  Once that value is assigned it will not change 
