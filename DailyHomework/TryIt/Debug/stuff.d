@@ -1,1 +1,0 @@
-stuff.d: ../stuff.cpp
