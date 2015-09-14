@@ -1,0 +1,1 @@
+The compiler prints out which line the error is at, what is potentially expected and what you have their instead.  It also displace the file that is causing the error.
