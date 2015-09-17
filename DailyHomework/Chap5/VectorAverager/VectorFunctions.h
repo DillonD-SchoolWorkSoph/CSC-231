@@ -9,6 +9,7 @@
 #define VECTORFUNCTIONS_H_
 #include <system_error>
 #include <vector>
+#include <iostream>
 using namespace std;
 int range_avg(vector<int> vec, int low, int high);
 

@@ -1,0 +1,1 @@
+After using the debugger, it ran until I needed to input some information, then gave me the ability to go line by line.  One interesting thing is when i stepped into cout it took me to all the standard library classes and pulled them up in eclipse.  The breakpoint allowed the program to run until it reached that point in the code, then I was able to debug it.
