@@ -1,0 +1,17 @@
+//this is a grammer for exercise 7
+
+Expression:
+	Term
+	Expression "|" Term
+Term:
+	Primary
+	Term "&" Primary
+	Term "^" Primary
+Primary:
+	Prefix
+	"(" Expression ")"
+Prefix:
+	"!" Bit Expression 
+	"~" Bit Expression 
+Bit Expression:
+A collections of binary values ie. 010's
