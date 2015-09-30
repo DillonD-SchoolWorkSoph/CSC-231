@@ -1,0 +1,17 @@
+Expression:
+	Term
+	Term '+' Expression
+	Term '-' Expression
+Term:
+	Primary
+	Primary '*' Secondary
+	Primary '/' Secondary
+Primary:
+	Secondary
+	Secondary '!' Primarry
+Secondary:
+	Number
+	'(' Expression ')'
+Number:
+	Floating Point Number
+
