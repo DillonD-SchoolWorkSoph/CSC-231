@@ -11,7 +11,7 @@
 using namespace std;
 
 //this method tells you if a vector contains and integer
-bool contains(vector<int> x, int value);
+bool contains(vector<int>& x, int value);
 //this method creates a vector of length 4 which is used for a game
 vector<int> createGame();
 //this method asks theuser to input 4 numbers, then it returns a vector of length four with this numbers
@@ -23,6 +23,7 @@ int main() {
 	while (true) {
 		//create the game
 		round = createGame();
+		vector<int> roundOut = round;
 		while (true) {
 			//get the user input
 			vector<int> testCase;
@@ -36,25 +37,33 @@ int main() {
 			for (int i = 0; i < 4; i++) {
 				if (testCase[i] == round[i]) {
 					bulls++;
-				} else if (contains(round, testCase[i])) {
+					round[i] = -100; //impossible value
+					testCase[i] = 100; //impossible value
+				}
+			}
+			for (int i = 0; i < 4; i++) {
+				if (contains(round, testCase[i])) {
 					cows++;
 				}
 			}
 			cout << "Bulls: " << bulls << " Cows: " << cows;
-			cout << "\nIf you want to stop guessing enter 1";
+			cout
+					<< "\nIf you want to stop guessing enter 1, otherewise enter any number to continue";
 			int exit;
 			cin >> exit;
 			if (exit == 1)
 				break;
 
 		}
-		cout<<"The case for the last round was: ";
-		for(int i = 0 ; i < round.size(); i ++)
-			cout<<round[i];
-		cout<<"\nIf you want to quit the game press 1";
+		cout << "The case for the last round was: ";
+		for (int i = 0; i < round.size(); i++)
+			cout << roundOut[i];
+
+		cout
+				<< "\nIf you want to quit the game press 1, or enter any number to play another round";
 		int i = 0;
 		cin >> i;
-		if(i == 1)
+		if (i == 1)
 			break;
 	}
 }
@@ -72,19 +81,31 @@ vector<int> quariePlayer() {
 		cout << "Please input your guess for position:" << i;
 		int temp;
 		cin >> temp;
-		checkInput(temp);
+		try {
+			checkInput(temp);
+		} catch (exception& e) {
+			cout << "Their has been an error in your guess\n";
+			cout << e.what();
+		}
 		testCase.push_back(temp);
 	}
 	return testCase;
 }
-void checkInput(int input){
-	if(input < 0 || input > 9)
+//makes sure the user input is okay
+void checkInput(int input) {
+	if (input < 0 || input > 9) {
 		//throw some sort of error
+		throw new exception;
+	}
 }
-bool contains(vector<int> x, int value) {
+//checks if the sent vrcor contains the value, if it does it sets the value in the sent vector to equal -100 so it is not
+//checked again in th efuture
+bool contains(vector<int>& x, int value) {
 	for (int i = 0; i < x.size(); i++) {
-		if (x[i] == value)
+		if (x[i] == value){
+			x[i] = -100;
 			return true;
+		}
 	}
 	return false;
 }
