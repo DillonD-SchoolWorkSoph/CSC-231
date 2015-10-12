@@ -1,0 +1,1 @@
+You can declare a method with a constant param, it would be so when someone passes the parameter you can use it inside of your funciton.  You just can make any modifications to that parameter.  I guess if you wanted to keep from changing if if you use it as a counter or something it could be userful, but it would have no effect on the outside variable you pass to the function.
