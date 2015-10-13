@@ -9,10 +9,16 @@
 #include <iostream>
 
 using namespace std;
+
+struct NameAge{
+	std::string name;
+	int age;
+
+	NameAge(string n, int a);
+};
 class Name_Pairs{
 public:
-	vector<string> name;
-	vector<double> age;
+	vector<NameAge> stuff;
 	void read_names();
 	void read_ages();
 	void print();
@@ -22,20 +28,14 @@ public:
 void Name_Pairs::read_ages(){
 	while(cin){
 		double a;
-		cin >> a;
-		age.push_back(a);
-	}
-}
-void Name_Pairs::read_names(){
-	while(cin){
-		string n;
-		cin >> n;
-		name.push_back(n);
+		string na;
+		cin >> a >> na;
+		stuff.push_back((new NameAge{na, a}));
 	}
 }
 void Name_Pairs::print(){
-	for(int i = 0; i < name.size && i < age.size(); i ++){
-		cout << name[i] << age[i];
+	for(int i = 0; i < stuff.size(); i ++){
+		cout << stuff[i].name << stuff[i].age;
 	}
 }
 void Name_Pairs::sort(){
