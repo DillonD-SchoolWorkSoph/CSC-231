@@ -10,13 +10,14 @@
 
 using namespace std;
 
-struct NameAge{
-	std::string name;
-	int age;
 
-	NameAge(string n, int a);
-};
 class Name_Pairs{
+	struct NameAge{
+		std::string name;
+		int age;
+
+		NameAge(string n, int a);
+	};
 public:
 	vector<NameAge> stuff;
 	void read_names();
@@ -24,6 +25,11 @@ public:
 	void print();
 	void sort();
 
+	bool operator<(const NameAge& lhs, const NameAge& rhs){
+		if(lhs == rhs)
+			return true;
+		return false;
+	}
 };
 void Name_Pairs::read_ages(){
 	while(cin){
@@ -39,7 +45,15 @@ void Name_Pairs::print(){
 	}
 }
 void Name_Pairs::sort(){
-
+	for(int i = 0 ; i < stuff.size(); i ++){
+		for(int y = 1 ; y <= i; y ++){
+			if(stuff[y] > stuff[y-1]){
+				int temp = stuff[y];
+				stuff[y] = stuff[y-1];
+				stuff[y-1] = temp;
+			}
+		}
+	}
 }
 int main(){
 
