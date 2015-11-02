@@ -1,0 +1,1 @@
+If you try to copy a shape it will not allow you since shape isan abrastc class so their is nothing tocopy.

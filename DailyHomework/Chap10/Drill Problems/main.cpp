@@ -33,7 +33,6 @@ for(unsigned i = 0; i < 7; ++ i){
 for(point p : processed_points){
 	std::cout << p.to_string();
 }
-
 }
 
 
