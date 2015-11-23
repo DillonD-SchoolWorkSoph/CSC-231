@@ -1,0 +1,86 @@
+1.	A. Node A is the root
+	B. Node's G,H,I,L,M and K are leaves
+2.	Node A:
+		No parent, its a root
+		Children are B,C
+		No siblings
+		Depth 0
+		Height 5
+	Node B:
+		Parent A
+		Children are D,E
+		Sibling C
+		Depth 1
+		Height 4
+	Node C:
+		Parent A
+		Children is C
+		Sibling B
+		Depth 1
+		Height 4
+	Node D:
+		Parent B
+		Children G,H
+		Sibling E
+		Depth 2
+		Height 3
+	Node E:
+		Parent B
+		Children I,J
+		Sibling D
+		Depth 2
+		Deight 3
+	Node F:
+		Parent C
+		Children K
+		Sibling None
+		Depth 2
+		Height 2
+	Node G:
+		Parent D
+		Children None
+		Sibling H
+		Depth 3
+		Height 1
+	Node H:
+		Parent D
+		Children NOne
+		Sibling G
+		Depth 3
+		Height 1
+	NOde I:
+		Parent E
+		Children NOne
+		Sibling J
+		Depth 3
+		Heigh 2
+	Node J:
+		Parent E
+		Childred: L, M
+		Sibling I
+		Depth 3
+		Height 2
+	Node K:
+		Parent F
+		Children None
+		Sibling NOne
+		Depth 3
+		Height 1
+	Node L:
+		Parent J
+		Children NOne
+		Sibling M
+		Depth 3
+		Height 1
+	Node M:
+		Parent J
+		Children NOne
+		Sibling L
+		Depth 3
+		Height 1
+6.  Statement:  The number of full nodes (node with two children) plus one is equal to the number of leaves in a nonempty binary tree.
+	Induction Hypothesis:  Asume you have so arbitary tree were the number of full nodes is , wheh K is equal to one then you will have a single full node, with two children these two childredn are leaves of the binary tree.  So the number of full nodes is 1, and the leaves are 2, so K+1 is equal to the number of leaves of the tree.
+	Induction Step:
+Now if you have if you have K + 1 Nodes, then you will have K nodes + 1, and since the kth node will be conected to the plus one node, then you know that the number of leaves will be k+1, plus the 1th one node for the 1th full node.  	
+				
+
